@@ -2,32 +2,44 @@
 
 <section id="hero">
   <div class="hero-section wrap">
-    <h1>This is a header</h1>
-    <h3>Ut leo. Sed aliquam ultrices mauris. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce a quam.</h3>
-    <a href="contact.php" class="button">Contact us</a>
+    <h1>The Kitchen House</h1>
   </div>
 </section><!-- /hero -->
 
-<section id="about">
-  <div class="about-section wrap cf">
-    <h2>About</h2>
-<?php include( get_template_directory() . '/front-page-about.php' ); ?>
+<section id="book">
+  <div class="book-section wrap">
+    <div class="post">
+      <img src="http://localhost/kathy/wp-content/uploads/2014/11/book.jpg">
+
+      <div class="post-content">
+        <h2>The Kitchen House</h2>
+        <p>In 1790, Lavinia, a seven-year-old Irish orphan with no memory of her past, arrives on a tobacco plantation where she is put to work as an indentured servant with the kitchen house slaves. Though she becomes deeply bonded to her new family...</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="http://localhost/kathy/wp-content/uploads/2014/11/book.jpg">
+
+      <div class="post-content">
+        <h2>The Kitchen House</h2>
+        <p>In 1790, Lavinia, a seven-year-old Irish orphan with no memory of her past, arrives on a tobacco plantation where she is put to work as an indentured servant with the kitchen house slaves. Though she becomes deeply bonded to her new family...</p>
+        <a href="#" class="button">Read More</a>
+      </div>
+    </div>
+
   </div>
 
 </section><!-- /about -->
 
-<section id="portfolio">
-  <div class="portfolio-section wrap cf">
-    <h2>Portfolio</h2>
-<?php include( get_template_directory() . '/front-page-portfolio.php' ); ?>
-  </div><br style="clear:both"/>
-</section><!-- /portfolio -->
+<section id="about">
+  <div class="about-section wrap">
+    <h2>About Kathy</h2>
+    <p>I love books. If I could eat them, I would. I love their scent and often put my nose in to inhale their aroma. The first book I owned was The Secret Of Pooduck Island, given to me by a dear family friend, Alphonse Gerwing, a man who later went on to accept the Order of Canada medal. That book today remains a prized possession.</p>
 
-<section id="members">
-  <div class="members-section wrap cf">
-    <h2>Members</h2>
-<?php include( get_template_directory() . '/front-page-members.php' ); ?>
+    <a href="#" class="button">More</a>
   </div>
-</section><!-- /members -->
+
+</section><!-- /about -->
 
 <?php get_footer(); ?>

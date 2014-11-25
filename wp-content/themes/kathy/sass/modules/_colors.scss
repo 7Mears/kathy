@@ -4,36 +4,21 @@ $white            : #fff;
 $black            : #0b0b0b;
 $grey             : #797e83;
 
-$fountain-blue             : #52bab3;
-$emerald         : #5ece7f;
-$sunglo           : #e67478;
-$coral            : #ff784f;
-$purple-majesty   : #9279c3;
-$scooter          : #39add1;
+$light-yellow     : #FFF0A5;
+$orange           : #FFB03B;
+$dark-orange      : #B64926;
+$red              : #8E2800;
+$green            : #468966;
+
 
 // Color Usage
 
-$color-primary    : $fountain-blue;
-$color-secondary  : $scooter;
-$color-accent     : $emerald;
-$color-shadow     : rgba($black, .2);
+$color-primary    : $orange;
+$color-secondary  : $dark-orange;
+$color-accent     : $red;
 
-// Color Palette Modifiers
+$background-dark  : $grey;
+$background-light : $light-yellow;
 
-$palettes: (
-  grey: (
-    base    : $grey,
-    dark    : darken($grey, 8%),
-    x-dark  : darkenn($grey, 16%),
-  )
-);
-
-// UI Colors
-
-$ui-colors: (
-  default : $fountain-blue,
-  success : $emerald,
-  error   : $sunglo,
-  warning : $coral,
-  info    : $purple-majesty
-);
+$text-primary     : $orange;
+$text-secondary   : $dark-orange;
