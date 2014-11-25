@@ -7,7 +7,7 @@
 </section><!-- /hero -->
 
 <section id="book">
-  <div class="book-section wrap">
+  <div class="book-section wrap cf">
     <div class="post">
       <img src="http://localhost/kathy/wp-content/uploads/2014/11/book.jpg">
 
@@ -33,7 +33,7 @@
 </section><!-- /about -->
 
 <section id="about">
-  <div class="about-section wrap">
+  <div class="about-section wrap cf">
     <h2>About Kathy</h2>
     <p>I love books. If I could eat them, I would. I love their scent and often put my nose in to inhale their aroma. The first book I owned was The Secret Of Pooduck Island, given to me by a dear family friend, Alphonse Gerwing, a man who later went on to accept the Order of Canada medal. That book today remains a prized possession.</p>
 

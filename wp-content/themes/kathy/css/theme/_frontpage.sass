@@ -1,39 +1,40 @@
-body
-  background: $background-light
-
-.wrap
-  width: 1200px
-  margin: 0 auto
-
 #hero
   background: url('http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg')
   background-size: cover
 
 .hero-section
   padding: 150px
+
   h1
     text-align: center
+    color: $white
 
 .book-section
   margin-top: -100px
+
   .post
     width: 50%
     float: left
+
     h2
       padding-top: 25px
-      text-align:center
+      text-align: center
+
     img
       height: 300px
       display: block
       margin: 0 auto
+
     .post-content
       margin: -25px 50px 50px 50px
-      padding: $base__font-size
-      background: rgba(255,255,255,0.3)
+      padding: $base__font-size * 2
+      background: rgba($color-primary,0.1)
+      border-radius: $base__font-size / 2
 
 .about-section
   p
     width: 70%
+
   a
     width: auto
     float: right

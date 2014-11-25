@@ -2,7 +2,7 @@
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Josefin+Slab");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,33 +46,66 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  text-decoration: none; }
+
 h1 {
-  font-size: 32px; }
+  font-size: 40px; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 32px; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 26px; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
+  color: #0E7369; }
+
+a {
+  color: #1BA698; }
+
+a:hover {
+  color: #F24738; }
+
+.button {
+  width: auto;
+  background-color: #1BA698;
+  color: #F2F2F2;
+  padding: 9px 18px;
+  border-radius: 9px; }
+  .button:hover {
+    background-color: #0E7369; }
 
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-size: 18px;
+  line-height: 1.55556;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #F2F2F2; }
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*** Clear floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
 
 /* -- Navigation -- */
 .main-navigation {
@@ -138,7 +171,7 @@ body {
   width: 50%; }
 
 .header-section {
-  height: 100px; }
+  height: 75px; }
 
 .site-branding,
 .main-navigation {
@@ -149,16 +182,9 @@ body {
   float: right; }
 
 .nav-menu li {
-  padding: 25px 0 0 25px; }
+  padding: 18px; }
 
 /* -- Frontpage -- */
-body {
-  background: #FFF0A5; }
-
-.wrap {
-  width: 1200px;
-  margin: 0 auto; }
-
 #hero {
   background: url("http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg");
   background-size: cover; }
@@ -166,7 +192,8 @@ body {
 .hero-section {
   padding: 150px; }
   .hero-section h1 {
-    text-align: center; }
+    text-align: center;
+    color: #F2F2F2; }
 
 .book-section {
   margin-top: -100px; }
@@ -174,15 +201,17 @@ body {
     width: 50%;
     float: left; }
     .book-section .post h2 {
-      padding-top: 25px; }
+      padding-top: 25px;
+      text-align: center; }
     .book-section .post img {
       height: 300px;
       display: block;
       margin: 0 auto; }
     .book-section .post .post-content {
       margin: -25px 50px 50px 50px;
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.3); }
+      padding: 36px;
+      background: rgba(27, 166, 152, 0.1);
+      border-radius: 9px; }
 
 .about-section p {
   width: 70%; }

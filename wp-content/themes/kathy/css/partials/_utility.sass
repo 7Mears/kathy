@@ -6,8 +6,20 @@ body
   font-size: $base__font-size
   line-height: ($base__line/$base__font-size)
   font-family: $font-family--primary
+  background: $color-background
+
+.wrap
+  width: 1200px
+  margin: 0 auto
 
 @if variable-exists(font-url--google)
   @import url($font-url--google)
 
-// Mixins
+/*** Clear floats */
+.cf:before,
+.cf:after
+  content: " "
+  display: table
+
+.cf:after
+  clear: both

@@ -1,7 +1,7 @@
-$font-url--google         : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900'
+$font-url--google         : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Josefin+Slab'
 
 $font-family--primary     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif
-$font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-family--secondary   : 'Josefin Slab', serif
 
 // Font Weights
 $font-weight--thin        : 100
@@ -11,21 +11,28 @@ $font-weight--bold        : 700
 $font-weight--ultra-bold  : 900
 
 // Text
-$base__font-size  : 16px
-$base__line       : 24px
+$base__font-size  : 18px
+$base__line       : 28px
 
 // Headers
 h1
-  font-size: 32px
+  font-size: 40px
 h2
-  font-size: 28px
+  font-size: 36px
 h3
-  font-size: 24px
+  font-size: 32px
 h4
-  font-size: 20px
+  font-size: 26px
 h5
-  font-size: 16px
+  font-size: 20px
 
 h1, h2, h3, h4, h5, h6
-  font-family: $font-family--primary
-  font-weight: $font-weight--light
+  font-family: $font-family--secondary
+  font-weight: $font-weight--medium
+  color: $color-secondary
+
+// Links
+a
+  color: $color-primary
+a:hover
+  color: $color-alert
