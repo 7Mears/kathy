@@ -1,6 +1,7 @@
 #hero
   background: url('http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg')
   background-size: cover
+  background-attachment: fixed
 
 .hero-section
   padding-top: 100px
@@ -12,14 +13,17 @@
 
 .book-section
   margin-top: -100px
+  padding-bottom: 50px
 
   .post
-    width: 50%
+    width: 45%
     float: left
     @media screen and (max-width: $break-large)
       width: 100%
 
     h2
+      padding-top: 150px
+      padding-bottom: 12.5px
       text-align: center
 
     img
@@ -28,15 +32,27 @@
       margin: 0 auto
 
     .post-content
-      margin: -25px 50px 50px 50px
-      padding: $base__font-size * 2
-      background: rgba($color-primary,0.1)
+      margin-top: -150px
+      padding: 50px
+      background: $color-background-secondary
       border-radius: $base__font-size / 2
+    &:first-child
+      margin-right: 10%
+
+    .post-content
+      p
+        padding-bottom: 25px
+
+#about
+  background: url('http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg')
+  background-size: cover
+  background-attachment: fixed
+  padding: 100px 0
 
 .about-section
-  p
-    width: 70%
+  padding: 50px
+  background: $color-background-secondary
+  border-radius: $base__font-size / 2
 
-  a
-    width: auto
-    float: right
+  p
+    padding-bottom: 25px
