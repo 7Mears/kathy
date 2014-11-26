@@ -6,7 +6,7 @@
         <div class="post">
           <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
           <div class="post-content">
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p><?php the_excerpt(); ?></p>
             <a href="<?php echo get_permalink(); ?>" class="button">Read More</a>
           </div>

@@ -17,22 +17,21 @@ get_header(); ?>
       <header class="page-header">
         <h1>Books</h1>
       </header><!-- .page-header -->
+      <div id="book-archive" class="books-content cf">
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php /* Start the Loop */ ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-
-        <div class="post">
-          <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-          <div class="post-content">
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_excerpt(); ?></p>
-            <a href="<?php echo get_permalink(); ?>" class="button">Read More</a>
+          <div class="post">
+            <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <div class="post-content cf">
+              <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <?php the_excerpt(); ?>
+              <a href="<?php echo get_permalink(); ?>" class="button">More</a>
+            </div>
           </div>
-        </div>
 
-      <?php endwhile; ?>
-
-      <?php kathy_paging_nav(); ?>
+        <?php endwhile; ?>
+      </div>
 
     <?php else : ?>
 

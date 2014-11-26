@@ -1,0 +1,31 @@
+.post-type-archive-book
+
+  .post
+    width: 47.5%
+    float: left
+
+    h2
+      line-height: $base__line * 1.25
+
+    .button
+      margin: 25px 0
+      width: 100px
+      text-align: center
+      display: block
+
+    @media screen and (max-width: $break-large)
+      width: 100%
+      margin-bottom: 25px
+
+    img
+      height: 300px
+      float: right
+      margin: 25px
+    .post
+    &:first-child
+      margin-right: 5%
+
+  .post-content
+    background-color: $color-background-secondary
+    padding: 25px 25px 0 25px
+    border-radius: 5px

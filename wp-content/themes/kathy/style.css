@@ -84,6 +84,7 @@ a:hover {
     color: #E36C6C; }
 
 /*** Media Queries */
+/*** Backgrounds */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -253,5 +254,40 @@ a {
   border-radius: 5px; }
   .about-section p {
     padding-bottom: 25px; }
+
+/* -- Book Pages -- */
+.single-book .book-header {
+  background: url("http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .single-book .book-header h2 {
+    color: #F3F2EA;
+    padding: 50px; }
+
+.post-type-archive-book .post {
+  width: 47.5%;
+  float: left; }
+  .post-type-archive-book .post h2 {
+    line-height: 40px; }
+  .post-type-archive-book .post .button {
+    margin: 25px 0;
+    width: 100px;
+    text-align: center;
+    display: block; }
+  @media screen and (max-width: 1200px) {
+    .post-type-archive-book .post {
+      width: 100%;
+      margin-bottom: 25px; } }
+  .post-type-archive-book .post img {
+    height: 300px;
+    float: right;
+    margin: 25px; }
+  .post-type-archive-book .post:first-child {
+    margin-right: 5%; }
+.post-type-archive-book .post-content {
+  background-color: #E9E9DF;
+  padding: 25px 25px 0 25px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */
