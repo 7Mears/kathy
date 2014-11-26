@@ -20,7 +20,7 @@
     <h2>About Kathy</h2>
     <p>I love books. If I could eat them, I would. I love their scent and often put my nose in to inhale their aroma. The first book I owned was The Secret Of Pooduck Island, given to me by a dear family friend, Alphonse Gerwing, a man who later went on to accept the Order of Canada medal. That book today remains a prized possession.</p>
 
-    <a href="#" class="button">More</a>
+    <a href="about" class="button">More</a>
   </div>
 
 </section><!-- /about -->
