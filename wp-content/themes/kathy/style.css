@@ -77,10 +77,10 @@ a:hover {
   width: auto;
   color: #3E3D3A;
   padding: 9px 18px;
-  border: 3px solid #3E3D3A;
+  border: 2px solid #3E3D3A;
   border-radius: 5px; }
   .button:hover {
-    border: 3px solid #E36C6C;
+    border: 2px solid #E36C6C;
     color: #E36C6C; }
 
 /*** Media Queries */
