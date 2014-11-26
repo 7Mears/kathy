@@ -2,7 +2,7 @@
 
 <section id="hero">
   <div class="hero-section wrap">
-    <h1>The Kitchen House</h1>
+    <h1>Lorem ipsum nec sem in justo pellentesque facilisis.</h1>
   </div>
 </section><!-- /hero -->
 

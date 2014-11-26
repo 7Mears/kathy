@@ -46,9 +46,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a {
-  text-decoration: none; }
-
 h1 {
   font-size: 40px; }
 
@@ -70,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #0E7369; }
 
 a {
-  color: #1BA698; }
+  color: #1BA698;
+  text-decoration: none; }
 
 a:hover {
   color: #F24738; }
@@ -84,6 +82,7 @@ a:hover {
   .button:hover {
     background-color: #0E7369; }
 
+/*** Media Queries */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -97,6 +96,9 @@ body {
 .wrap {
   width: 1200px;
   margin: 0 auto; }
+  @media screen and (max-width: 1200px) {
+    .wrap {
+      width: 100%; } }
 
 /*** Clear floats */
 .cf:before,
@@ -182,7 +184,11 @@ body {
   float: right; }
 
 .nav-menu li {
-  padding: 18px; }
+  padding-left: 18px;
+  padding-top: 18px; }
+
+.site-branding {
+  padding-top: 5px; }
 
 /* -- Frontpage -- */
 #hero {
@@ -190,7 +196,8 @@ body {
   background-size: cover; }
 
 .hero-section {
-  padding: 150px; }
+  padding-top: 100px;
+  padding-bottom: 150px; }
   .hero-section h1 {
     text-align: center;
     color: #F2F2F2; }
@@ -200,8 +207,10 @@ body {
   .book-section .post {
     width: 50%;
     float: left; }
+    @media screen and (max-width: 1200px) {
+      .book-section .post {
+        width: 100%; } }
     .book-section .post h2 {
-      padding-top: 25px;
       text-align: center; }
     .book-section .post img {
       height: 300px;

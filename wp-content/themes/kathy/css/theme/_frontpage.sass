@@ -3,7 +3,8 @@
   background-size: cover
 
 .hero-section
-  padding: 150px
+  padding-top: 100px
+  padding-bottom: 150px
 
   h1
     text-align: center
@@ -15,9 +16,10 @@
   .post
     width: 50%
     float: left
+    @media screen and (max-width: $break-large)
+      width: 100%
 
     h2
-      padding-top: 25px
       text-align: center
 
     img
