@@ -190,7 +190,8 @@ body {
   background-size: cover; }
 
 .hero-section {
-  padding: 150px; }
+  padding-top: 50px;
+  padding-bottom: 200px; }
   .hero-section h1 {
     text-align: center;
     color: #F2F2F2; }
@@ -201,15 +202,15 @@ body {
     width: 50%;
     float: left; }
     .book-section .post h2 {
-      padding-top: 25px;
+      padding-top: 75px;
       text-align: center; }
     .book-section .post img {
       height: 300px;
       display: block;
       margin: 0 auto; }
     .book-section .post .post-content {
-      margin: -25px 50px 50px 50px;
-      padding: 36px;
+      margin: -100px 50px 50px 50px;
+      padding: 15%;
       background: rgba(27, 166, 152, 0.1);
       border-radius: 9px; }
 
