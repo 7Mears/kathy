@@ -8,25 +8,8 @@
 
 <section id="book">
   <div class="book-section wrap cf">
-    <div class="post">
-      <img src="http://localhost/kathy/wp-content/uploads/2014/11/book.jpg">
 
-      <div class="post-content">
-        <h2>The Kitchen House</h2>
-        <p>In 1790, Lavinia, a seven-year-old Irish orphan with no memory of her past, arrives on a tobacco plantation where she is put to work as an indentured servant with the kitchen house slaves. Though she becomes deeply bonded to her new family...</p>
-        <a href="#" class="button">Read More</a>
-      </div>
-    </div>
-
-    <div class="post">
-      <img src="http://localhost/kathy/wp-content/uploads/2014/11/book.jpg">
-
-      <div class="post-content">
-        <h2>The Kitchen House</h2>
-        <p>In 1790, Lavinia, a seven-year-old Irish orphan with no memory of her past, arrives on a tobacco plantation where she is put to work as an indentured servant with the kitchen house slaves. Though she becomes deeply bonded to her new family...</p>
-        <a href="#" class="button">Read More</a>
-      </div>
-    </div>
+<?php include( get_template_directory() . '/front-page-books.php' ); ?>
 
   </div>
 

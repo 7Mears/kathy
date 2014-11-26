@@ -12,7 +12,7 @@
 
 <footer class="site-footer wrap">
 	<div class="footer-section">
-		<p>Footer</p>
+		<p>© <?php echo date("Y"); ?> Kathleen Grissom | Website by <a href="http://www.jordanmears.com">Mears</a></p>
 	</div><!-- /footer-section -->
 </footer>
 

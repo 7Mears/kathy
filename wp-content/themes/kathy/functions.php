@@ -156,3 +156,28 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// This theme uses post thumbnails
+add_theme_support( 'post-thumbnails' );
+
+
+/*** Book custom post type
+    *************************/
+add_action( 'init', 'post_type_book' );
+function post_type_book() {
+  register_post_type( 'kathy_book',
+    array(
+      'labels' => array(
+        'name' => __( 'Books' ),
+        'singular_name' => __( 'Book' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+			'supports' => array('title','editor','thumbnail')
+    )
+  );
+}
+
+
+
+?>
