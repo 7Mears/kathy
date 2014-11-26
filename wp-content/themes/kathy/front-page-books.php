@@ -1,5 +1,5 @@
     <?php
-        $args = array( 'post_type' => 'kathy_book', 'posts_per_page' => 2 );
+        $args = array( 'post_type' => 'book', 'posts_per_page' => 2 );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();?>
 

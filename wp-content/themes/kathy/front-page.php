@@ -2,7 +2,7 @@
 
 <section id="hero">
   <div class="hero-section wrap">
-    <h1>Lorem ipsum nec sem in justo pellentesque facilisis.</h1>
+    <h1>A book club favorite by a New York Times bestselling author</h1>
   </div>
 </section><!-- /hero -->
 
