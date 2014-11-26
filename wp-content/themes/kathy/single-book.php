@@ -8,11 +8,13 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-test
+  <main id="main" class="site-main wrap" role="main">
+
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php get_template_part( 'content', 'single' ); ?>
+      <?php the_post_thumbnail(); ?>
+      <h2><?php the_title(); ?></h2>
+      <p><?php the_content(); ?></p>
 
     <?php endwhile; // end of the loop. ?>
 

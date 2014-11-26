@@ -165,7 +165,7 @@ add_theme_support( 'post-thumbnails' );
     *************************/
 add_action( 'init', 'post_type_book' );
 function post_type_book() {
-  register_post_type( 'kathy_book',
+  register_post_type( 'book',
     array(
       'labels' => array(
         'name' => __( 'Books' ),
