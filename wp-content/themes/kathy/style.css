@@ -265,6 +265,17 @@ a {
     color: #F3F2EA;
     padding: 50px; }
 
+.book-sidebar {
+  width: 30%;
+  float: left; }
+
+.book-main {
+  width: 70%;
+  float: right; }
+
+.book-content {
+  padding: 50px 0; }
+
 .post-type-archive-book .post {
   width: 47.5%;
   float: left; }

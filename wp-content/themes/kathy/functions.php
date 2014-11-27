@@ -179,5 +179,4 @@ function post_type_book() {
 }
 
 
-
 ?>
