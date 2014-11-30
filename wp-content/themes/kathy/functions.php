@@ -173,10 +173,12 @@ function post_type_book() {
       ),
       'public' => true,
       'has_archive' => true,
+			'menu_icon' => 'dashicons-book',
 			'supports' => array('title','editor','thumbnail')
     )
   );
 }
+
 
 
 ?>

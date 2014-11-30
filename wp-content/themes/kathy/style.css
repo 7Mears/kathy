@@ -194,7 +194,8 @@ a {
   padding: 21.5px; }
 
 .footer-section {
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 /* -- Frontpage -- */
 #hero {
@@ -258,6 +259,9 @@ a {
 .postid-31 .book-header {
   background: url("http://localhost/kathy/wp-content/uploads/2014/11/the-kitchen-house-bg.jpg"); }
 
+.postid-33 .book-header {
+  background: url("http://localhost/kathy/wp-content/uploads/2014/11/Cuesmes_JPG001.jpg"); }
+
 .single-book .book-header {
   background-size: cover;
   background-attachment: fixed;
@@ -277,6 +281,10 @@ a {
 .book-sidebar {
   width: 30%;
   float: left; }
+  .book-sidebar a {
+    text-decoration: underline; }
+  .book-sidebar h4 {
+    padding: 12.5px 0; }
   .book-sidebar img {
     margin-top: -100px; }
 

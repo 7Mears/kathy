@@ -19,6 +19,12 @@ get_header(); ?>
       <div class="book-content wrap">
         <div class="book-sidebar">
           <?php the_post_thumbnail(); ?>
+          <h4>Available at:</h4>
+          <?php
+          $buy_books = types_render_field("book-link", array("output"=>"html"));
+          printf($buy_books);
+          ?>
+
         </div>
 
         <div class="book-main">
