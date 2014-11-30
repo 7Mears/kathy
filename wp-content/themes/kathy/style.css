@@ -90,9 +90,9 @@ a:hover {
   box-sizing: border-box; }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.77778;
+  line-height: 2;
   font-family: "Open Sans", Arial, sans-serif;
   background: #F3F2EA; }
 
@@ -184,7 +184,6 @@ a {
 
 .site-branding,
 .main-navigation {
-  padding-top: 5px;
   width: auto;
   display: inline-block; }
 
@@ -192,8 +191,10 @@ a {
   float: right; }
 
 .nav-menu li {
-  padding-left: 18px;
-  padding-top: 18px; }
+  padding: 21.5px; }
+
+.footer-section {
+  padding-top: 25px; }
 
 /* -- Frontpage -- */
 #hero {
@@ -204,9 +205,10 @@ a {
 .hero-section {
   padding-top: 100px;
   padding-bottom: 150px; }
-  .hero-section h1 {
+  .hero-section h2 {
     text-align: center;
-    color: #F3F2EA; }
+    color: #F3F2EA;
+    text-shadow: 1px 1px #3E3D3A; }
 
 .book-section {
   margin-top: -50px;
@@ -217,7 +219,7 @@ a {
     @media screen and (max-width: 1200px) {
       .book-section .post {
         width: 100%; } }
-    .book-section .post h2 {
+    .book-section .post h3 {
       padding-top: 162.5px;
       text-align: center; }
     .book-section .post img {
@@ -236,11 +238,8 @@ a {
       border-radius: 5px; }
     .book-section .post:first-child {
       margin-right: 10%; }
-    .book-section .post .post-content {
-      margin-left: auto;
-      margin-right: auto; }
-      .book-section .post .post-content p {
-        padding-bottom: 25px; }
+    .book-section .post .post-content p {
+      padding-bottom: 25px; }
 
 #about {
   background: url("http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg");
@@ -256,18 +255,17 @@ a {
     padding-bottom: 25px; }
 
 /* -- Book Pages -- */
+.postid-31 .book-header {
+  background: url("http://localhost/kathy/wp-content/uploads/2014/11/the-kitchen-house-bg.jpg"); }
+
 .single-book .book-header {
-  background: url("http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center; }
   .single-book .book-header h2 {
     color: #F3F2EA;
+    text-shadow: 1px 1px #3E3D3A;
     padding: 50px; }
-
-.book-sidebar {
-  width: 30%;
-  float: left; }
 
 .book-main {
   width: 70%;
@@ -276,11 +274,15 @@ a {
 .book-content {
   padding: 50px 0; }
 
+.book-sidebar {
+  width: 30%;
+  float: left; }
+  .book-sidebar img {
+    margin-top: -100px; }
+
 .post-type-archive-book .post {
   width: 47.5%;
   float: left; }
-  .post-type-archive-book .post h2 {
-    line-height: 40px; }
   .post-type-archive-book .post .button {
     margin: 25px 0;
     width: 100px;

@@ -24,7 +24,7 @@ get_header(); ?>
           <div class="post">
             <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
             <div class="post-content cf">
-              <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
               <?php the_excerpt(); ?>
               <a href="<?php echo get_permalink(); ?>" class="button">More</a>
             </div>

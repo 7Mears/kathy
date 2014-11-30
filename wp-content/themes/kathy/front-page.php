@@ -2,7 +2,7 @@
 
 <section id="hero">
   <div class="hero-section wrap">
-    <h1>A book club favorite by a New York Times bestselling author</h1>
+    <h2>A book club favorite by a New York Times bestselling author</h2>
   </div>
 </section><!-- /hero -->
 
