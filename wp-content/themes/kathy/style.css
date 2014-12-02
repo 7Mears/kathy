@@ -116,88 +116,25 @@ body {
 a {
   transition: 0.4s ease; }
 
-/* -- Navigation -- */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu */
-.menu-toggle {
-  display: none; }
-
-@media screen and (max-width: 800px) {
-  .menu-toggle,
-  .main-navigation.toggled .nav-menu {
-    display: block; }
-
-  .main-navigation ul {
-    display: none; } }
-.site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.paging-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
-.header-section {
-  height: 75px; }
-
-.site-branding,
-.main-navigation {
-  width: auto;
-  display: inline-block; }
+.site-branding {
+  float: left; }
 
 .main-navigation {
   float: right; }
 
-.nav-menu li {
-  padding: 21.5px; }
+.menu li {
+  display: inline-block;
+  margin: 25px 10px; }
 
 @media screen and (max-width: 800px) {
+  .main-navigation,
   .site-branding {
+    float: none;
     text-align: center;
-    display: block; } }
+    display: block; }
 
+  .menu li {
+    margin: 10px; } }
 .footer-section {
   padding-top: 25px;
   text-align: center; }
@@ -225,6 +162,9 @@ a {
   .book-section .post {
     width: 45%;
     float: left; }
+    @media screen and (max-width: 1200px) {
+      .book-section .post {
+        width: 48%; } }
     @media screen and (max-width: 800px) {
       .book-section .post {
         width: 100%; } }
@@ -247,6 +187,9 @@ a {
       border-radius: 5px; }
     .book-section .post:first-child {
       margin-right: 10%; }
+      @media screen and (max-width: 1200px) {
+        .book-section .post:first-child {
+          margin-right: 2%; } }
     .book-section .post .post-content p {
       padding-bottom: 25px; }
     @media screen and (max-width: 800px) {
@@ -285,11 +228,15 @@ a {
 .single-book .book-header {
   background-size: cover;
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  padding: 50px; }
   .single-book .book-header h2 {
     color: #f3f2ea;
     text-shadow: 1px 1px #3e3d3a;
     padding: 50px; }
+    @media screen and (max-width: 800px) {
+      .single-book .book-header h2 {
+        padding: 25px 0; } }
 
 .book-main {
   width: 70%;

@@ -22,8 +22,11 @@
   .post
     width: 45%
     float: left
+    @media screen and (max-width: $break-large)
+      width: 48%
     @media screen and (max-width: $break-medium)
       width: 100%
+
 
     h3
       padding-top: 162.5px
@@ -48,6 +51,8 @@
 
     &:first-child
       margin-right: 10%
+      @media screen and (max-width: $break-large)
+        margin-right: 2%
 
     .post-content
       p

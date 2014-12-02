@@ -1,19 +1,21 @@
-.header-section
-  height: 75px
-
-.site-branding,
-.main-navigation
-
-  width: auto
-  display: inline-block
+.site-branding
+  float: left
 
 .main-navigation
   float: right
 
-.nav-menu li
-  padding: 21.5px
+.menu
+  li
+    display: inline-block
+    margin: 25px 10px
 
-.site-branding
-  @media screen and (max-width: $break-medium)
+@media screen and (max-width: $break-medium)
+  .main-navigation,
+  .site-branding
+    float: none
     text-align: center
     display: block
+
+  .menu
+    li
+      margin: 10px

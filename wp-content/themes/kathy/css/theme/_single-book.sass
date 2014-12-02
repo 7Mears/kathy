@@ -11,11 +11,14 @@
     background-size: cover
     background-attachment: fixed
     text-align: center
+    padding: 50px
 
     h2
       color: $white
       text-shadow: 1px 1px $color-primary
       padding: 50px
+      @media screen and (max-width: $break-medium)
+        padding: 25px 0
 
 .book-main
   width: 70%
