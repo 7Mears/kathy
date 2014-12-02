@@ -1,4 +1,4 @@
-/**
+/*
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
@@ -64,27 +64,27 @@ h5 {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Slab", serif;
   font-weight: 400;
-  color: #3E3D3A; }
+  color: #3e3d3a; }
 
 a {
-  color: #3E3D3A;
+  color: #3e3d3a;
   text-decoration: none; }
 
 a:hover {
-  color: #E36C6C; }
+  color: #e36c6c; }
 
 .button {
   width: auto;
-  color: #3E3D3A;
+  color: #3e3d3a;
   padding: 9px 18px;
-  border: 2px solid #3E3D3A;
+  border: 2px solid #3e3d3a;
   border-radius: 5px; }
   .button:hover {
-    border: 2px solid #E36C6C;
-    color: #E36C6C; }
+    border: 2px solid #e36c6c;
+    color: #e36c6c; }
 
-/*** Media Queries */
-/*** Backgrounds */
+/** Media Queries */
+/** Backgrounds */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -94,7 +94,7 @@ body {
   font-weight: 400;
   line-height: 2;
   font-family: "Open Sans", Arial, sans-serif;
-  background: #F3F2EA; }
+  background: #f3f2ea; }
 
 .wrap {
   width: 1200px;
@@ -103,7 +103,7 @@ body {
     .wrap {
       width: 100%; } }
 
-/*** Clear floats */
+/** Clear floats */
 .cf:before,
 .cf:after {
   content: " ";
@@ -153,7 +153,7 @@ a {
 .menu-toggle {
   display: none; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block; }
@@ -193,6 +193,11 @@ a {
 .nav-menu li {
   padding: 21.5px; }
 
+@media screen and (max-width: 800px) {
+  .site-branding {
+    text-align: center;
+    display: block; } }
+
 .footer-section {
   padding-top: 25px;
   text-align: center; }
@@ -208,8 +213,11 @@ a {
   padding-bottom: 150px; }
   .hero-section h2 {
     text-align: center;
-    color: #F3F2EA;
-    text-shadow: 1px 1px #3E3D3A; }
+    color: #f3f2ea;
+    text-shadow: 1px 1px #3e3d3a; }
+    @media screen and (max-width: 800px) {
+      .hero-section h2 {
+        font-size: 26px; } }
 
 .book-section {
   margin-top: -50px;
@@ -217,7 +225,7 @@ a {
   .book-section .post {
     width: 45%;
     float: left; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 800px) {
       .book-section .post {
         width: 100%; } }
     .book-section .post h3 {
@@ -235,12 +243,15 @@ a {
     .book-section .post .post-content {
       margin-top: -200px;
       padding: 50px;
-      background: #E9E9DF;
+      background: #e9e9df;
       border-radius: 5px; }
     .book-section .post:first-child {
       margin-right: 10%; }
     .book-section .post .post-content p {
       padding-bottom: 25px; }
+    @media screen and (max-width: 800px) {
+      .book-section .post:nth-child(2) {
+        padding-top: 50px; } }
 
 #about {
   background: url("http://localhost/kathy/wp-content/uploads/2014/11/John_Constable_The_Hay_Wain.jpg");
@@ -250,8 +261,17 @@ a {
 
 .about-section {
   padding: 50px;
-  background: #E9E9DF;
+  background: #e9e9df;
   border-radius: 5px; }
+  @media screen and (max-width: 800px) {
+    .about-section .button {
+      display: block;
+      text-align: center;
+      width: 100px;
+      margin: 0 auto; } }
+  @media screen and (max-width: 800px) {
+    .about-section h2 {
+      text-align: center; } }
   .about-section p {
     padding-bottom: 25px; }
 
@@ -267,13 +287,17 @@ a {
   background-attachment: fixed;
   text-align: center; }
   .single-book .book-header h2 {
-    color: #F3F2EA;
-    text-shadow: 1px 1px #3E3D3A;
+    color: #f3f2ea;
+    text-shadow: 1px 1px #3e3d3a;
     padding: 50px; }
 
 .book-main {
   width: 70%;
   float: right; }
+  @media screen and (max-width: 800px) {
+    .book-main {
+      width: 100%;
+      padding: 10%; } }
 
 .book-content {
   padding: 50px 0; }
@@ -281,12 +305,21 @@ a {
 .book-sidebar {
   width: 30%;
   float: left; }
+  @media screen and (max-width: 800px) {
+    .book-sidebar {
+      width: 100%;
+      text-align: center; } }
   .book-sidebar a {
     text-decoration: underline; }
   .book-sidebar h4 {
     padding: 12.5px 0; }
   .book-sidebar img {
     margin-top: -100px; }
+    @media screen and (max-width: 800px) {
+      .book-sidebar img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .post-type-archive-book .post {
   width: 47.5%;
@@ -307,8 +340,6 @@ a {
   .post-type-archive-book .post:first-child {
     margin-right: 5%; }
 .post-type-archive-book .post-content {
-  background-color: #E9E9DF;
+  background-color: #e9e9df;
   padding: 25px 25px 0 25px;
   border-radius: 5px; }
-
-/*# sourceMappingURL=style.css.map */

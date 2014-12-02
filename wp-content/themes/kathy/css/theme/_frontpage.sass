@@ -12,6 +12,8 @@
     text-align: center
     color: $white
     text-shadow: 1px 1px $color-primary
+    @media screen and (max-width: $break-medium)
+      font-size: 26px
 
 .book-section
   margin-top: -50px
@@ -20,7 +22,7 @@
   .post
     width: 45%
     float: left
-    @media screen and (max-width: $break-large)
+    @media screen and (max-width: $break-medium)
       width: 100%
 
     h3
@@ -50,6 +52,9 @@
     .post-content
       p
         padding-bottom: 25px
+    &:nth-child(2)
+      @media screen and (max-width: $break-medium)
+        padding-top: 50px
 
 #about
   background: $background-img
@@ -61,6 +66,17 @@
   padding: 50px
   background: $color-background-secondary
   border-radius: 5px
+
+  .button
+    @media screen and (max-width: $break-medium)
+      display: block
+      text-align: center
+      width: 100px
+      margin: 0 auto
+
+  h2
+    @media screen and (max-width: $break-medium)
+      text-align: center
 
   p
     padding-bottom: 25px
